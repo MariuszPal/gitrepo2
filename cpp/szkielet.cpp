@@ -5,9 +5,11 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main(int argc, char **argv)
 {
-	std::cout  << "Witaj w CPP";
+	cout  << "Witaj w CPP";
 	return 0;
 }
 
