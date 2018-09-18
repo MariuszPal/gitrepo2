@@ -2,12 +2,19 @@
 # -*- coding: utf-8 -*-
 #
 #  szablon.py
+#
 
 def main(args):
-    a = input("Podaj 1. liczbę: ")
-    b = input("Podaj 2. liczbę: ")
+    a = int(input("Podaj 1. liczbę: "))
+    b = int(input("Podaj 2. liczbę: "))
     print(a)
     print (b)
+    
+    print("Suma: ", a + b )
+    print("Roznica: ", a - b )
+    print("Iloczyn: ", a * b )
+    print("Iloraz: ", a / b )
+    
     return 0
 
 if __name__ == '__main__':
