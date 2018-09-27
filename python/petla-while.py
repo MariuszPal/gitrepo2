@@ -11,7 +11,7 @@ def main(args):
     stop = int(input("Podaj liczbę 2: "))
     
     while start >= stop:
-    print ("Za mala 2. liczba!")
+          print ("Za mala 2. liczba!")
     stop = int(input("Podaj liczbę 2: "))
     
     
