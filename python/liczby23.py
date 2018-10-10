@@ -18,17 +18,23 @@ def liczby2():
               ile = ile + 1 #zliczanie liczb
     return ile
 
+def liczby3():
+       
+	zlicz = 0 
+	for i in range(1, 10):
+		for j in range (10):
+			for s in range(10):
+			    if i != j != s  :
+			        print ("{}{}{} ".format(i , j , s ), end= " ")
+			        zlicz = zlicz + 1 
+	return zlicz
 
 def main(args):
     print("\n\nLiczb 2-cyfrowych:", liczby2())
+    print("\n\nLiczb 3-cyfrowych:", liczby3())
     return 0
     
-def liczby3():
-        """
-    Funkcja drukuje wszystkie liczby 3-cyfrowe, w których
-    nie powtarzają się cyfry. Na koniec zwraca ilość takich samych liczb.
-    Wykluczone liczby: 111, 222, 333 itd.
-    """
+
 
 if __name__ == '__main__':
     import sys
