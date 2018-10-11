@@ -23,9 +23,9 @@ def liczby3():
 	zlicz = 0 
 	for i in range(1, 10):
 		for j in range (10):
-			for s in range(10):
-			    if i != j != s  :
-			        print ("{}{}{} ".format(i , j , s ), end= " ")
+			for k in range(10):
+			    if i != j and i != k and j != k:
+			        print ("{}{}{} ".format(i , j , k ), end= " ")
 			        zlicz = zlicz + 1 
 	return zlicz
 
