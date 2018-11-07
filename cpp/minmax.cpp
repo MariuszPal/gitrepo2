@@ -26,8 +26,8 @@
      for (int i = 1; i<roz; i++) {
           if (minimum > tab[i])
               minimum = tab[i];
-        if (minimum < tab[i])
-              minimum = tab[i];
+        if (maksimum < tab[i])
+              maksimum = tab[i];
      }
      cout << "Min.: " << minimum << endl;
      cout << "Max.: " << maksimum << endl;
