@@ -8,18 +8,18 @@ using namespace std;
 int zlicz(char tab[]){
     int i = 0; // indeks znaków w tablicy
     //int ile = 0; // licznik znaków
-    while (tab [i] != '\0'){ 
+    while (tab [i] != '\0')
     //ile++;
     i++;
     return i;
 }
 
 
-//~void drukuj(char tab[] , int roz) {
-     //~for (int i = 0; i<roz; i++){
-          //~cout << tab[i] << " ";
-     //~}
- //~}
+void drukuj(char tab[] , int roz) {
+     for (int i = 0; i<roz; i++){
+          cout << tab[i] << " ";
+     }
+}
   
   
  
@@ -28,11 +28,15 @@ void ascii(char tab[], int roz) {
      for (int i = 0; i<roz; i++) {
           kod = (int)tab[i];
           if (kod > 96 && kod <123)
-              cout << (char)kod-32 << " ";
+              cout << (char)(kod-32) << " ";
+          
+          else if (kod > 64 && kod <1)
+              cout << (char)(kod+32) << " ";
+          
           else
               cout << (int)tab[i] << " ";
      }
- }
+}
 
 void liczznaki(char tab[], int roz){
     int spacje = 0;
