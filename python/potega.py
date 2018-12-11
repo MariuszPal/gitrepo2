@@ -17,7 +17,7 @@ def main(args):
     #print("Potęga {} do {} wynosi".format(a, n, potega_it (a, n)))
     assert(potega_it(2,2) == 4)
     assert(potega_it(1,0) == 1)
-    assert(potega_it(2,3) == 8)
+    
     return 0
 
 if __name__ == '__main__':
