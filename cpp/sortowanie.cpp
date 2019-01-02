@@ -20,9 +20,11 @@ void drukuj(int tab[], int roz) {
 }
 
 void zamien1(int &a, int &b) { // void nie ma return i nic nie zwraca 
+    //cout << a << " "<< b <<endl;    
     int tmp = a;  // zmienna pomocnicza
     a = b;
     b = tmp;
+    //cout << a << " "<< b <<endl;
 }
 
 void zamien2(int tab[], int i) {
@@ -53,6 +55,18 @@ void sort_insert(int tab[], int n) {
         tab[j+1] = tmp;
     }
 }
+void sort_selection (int tab[], int n) {
+     int i, j, k;
+     for (i = 0; i < n; i++){
+          k = i; // indeks najmniejszego elementu
+          for (j = i + 1; j < n; j++){
+              if (tab[j] < tab[k])
+                  k = j;
+        }
+        zamien1(tab[i], tab[k]);
+    }
+}
+
 
 int main(int argc, char **argv)
 {
@@ -61,7 +75,9 @@ int main(int argc, char **argv)
     wypelnij_los(tab, roz);
     drukuj(tab, roz);
     cout << endl << endl;
-    sort_bubble(tab, roz);
+    //sort_bubble(tab, roz);
+    sort_selection(tab, roz);
+    drukuj(tab, roz);
     cout << endl;
     //int a = 10;
     //int b = 20;
