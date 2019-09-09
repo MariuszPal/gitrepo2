@@ -14,6 +14,8 @@ int main(int argc, char **argv)
     cout<< "Podaj nazwisko: "<<endl;
     cin >> nazwisko;
     cout<< "HELLO WORLD" <<endl;
+    cout>>imie;
+    
 	
 	return 0;
 }
